@@ -9,6 +9,7 @@ use Facebook\WebDriver\Remote\RemoteWebDriver;
 
 $host = 'http://localhost:4444/wd/hub';
 $capabilities = DesiredCapabilities::firefox();
+
 $driver = RemoteWebDriver::create($host,$capabilities,5000);
 $driver->get('http://docs.seleniumhq.org/');
 $bdc = $driver->findElement(
